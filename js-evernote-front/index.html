@@ -2,10 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>James' Evernote Project</title>
+    <title>James' Nevernote Project</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-  James Lee
+    <h1>Never Note</h1>
+          <h2>Create a New Note!</h2>
+            <div>
+              <form class = "new-note-form" id="new-note-form">
+                New Note Title<input type="text" name="note-title" value=><br>
+                New Note Contents<input type="text" name="note-contents" value=><br>
+                  <button id="create" data-id = "new-note">Create New Note</button><br>
+              </form>
+
+          <br>
+       <div id="container" class='row'>
+         <div  class='column'>
+          <ul id="Note-List">
+
+
+
+
+          </ul>
+         </div>
+         <div>
+           <h1>EDIT NOTES</h1>
+           <form class = "edit-form" id='tien'>
+             Edit Note Title<input type="text" id="edit-title" name="edit-title" value=><br>
+             Edit Note Contents<input type="text" id="edit-body" name="edit-contents" value=><br>
+            <button id="final-edit" id="edit-note">Edit Note</button><br>
+           </form>
+         </div>
+          <h1>NOTE CONTENT => </h1>
+         <div id="note-details" class='note-content'>
+
+         </div>
+
+       </div>
+
   </body>
   <script src="index.js"></script>
 </html>
